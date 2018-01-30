@@ -1,0 +1,38 @@
+\documentclass[fleqn,a4paper,11pt]{article}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*}{\section}{}{}
+
+\usepackage[utf8]{inputenc} %UTF8 stöd så att jag kan skriva åäö
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb} %För formler och matte
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[toc,page]{appendix}
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+
+\title{Assignment 1 - Time Log}
+\author{Christian Olsson}
+%\date{5 oktober 2014}           % Blir dagens datum om det utelämnas
+
+\begin{document}
+
+\maketitle                      % Skriver ut rubriken som vi
+                                % deklarerade ovan med \title, \author
+                                % och eventuellt \date
+
+\thispagestyle{empty}           % \maketitle gör en
+                                % \pagestyle{plain}. Därför måste
+                                % denna rad vara med för att stänga av
+                                % sidnummer på första sida om man
+                                % använder \maketitle
+
+\newpage                        % Sidbrytning
+
+\section{Inledning}
+Uppgiften går ut på att med hjälp av att plotta differentialekvationer studera hur t.ex. två populationer av någon art växelverkar med varandra. En art kan gynnas, missgynnas eller vara likgiltig för den andres existens, och på så sätt beror utvecklingen av en arten också på den andra arten. Med hjälp av differentialekvationer beskrivs hur detta kan se ut, och sedan plottas de olika möjligheterna med hjälp av ett java-program.
+
+\end{document}                 % The input file ends with this command.

@@ -1,0 +1,46 @@
+\documentclass[fleqn,a4paper,11pt]{article}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*}{\section}{}{}
+
+\usepackage[utf8]{inputenc} %UTF8 stöd så att jag kan skriva åäö
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb} %För formler och matte
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[toc,page]{appendix}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+
+\title{Assignment 1 - Personal Plan}
+\author{Christian Olsson}
+%\date{5 oktober 2014}           % Blir dagens datum om det utelämnas
+
+\begin{document}
+
+\maketitle                      % Skriver ut rubriken som vi
+                                % deklarerade ovan med \title, \author
+                                % och eventuellt \date
+
+\thispagestyle{empty}           % \maketitle gör en
+                                % \pagestyle{plain}. Därför måste
+                                % denna rad vara med för att stänga av
+                                % sidnummer på första sida om man
+                                % använder \maketitle
+
+\newpage                        % Sidbrytning
+
+\section{Books}
+\subsection{Plan}
+Since this is the first go at this assignment, there is probably some time needed to
+get a overview of the existing code, and to understand what is to be done. The actual coding looks fairly straight-forward and should not take too much time. 
+
+Get an overview of the existing code: 30 min.\\
+Create the book-object factory: 30 min.\\
+Create book objects for testing: 15 min.
+
+\end{document}                 % The input file ends with this command.
