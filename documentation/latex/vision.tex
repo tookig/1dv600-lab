@@ -1,0 +1,62 @@
+\documentclass[fleqn,a4paper,11pt]{article}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*}{\section}{}{}
+
+\usepackage[utf8]{inputenc} %UTF8 stöd så att jag kan skriva åäö
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb} %För formler och matte
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[toc,page]{appendix}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+
+\title{Assignment 1 - Vision Document}
+\author{Christian Olsson}
+%\date{5 oktober 2014}           % Blir dagens datum om det utelämnas
+
+\begin{document}
+
+\maketitle                      % Skriver ut rubriken som vi
+                                % deklarerade ovan med \title, \author
+                                % och eventuellt \date
+
+\thispagestyle{empty}           % \maketitle gör en
+                                % \pagestyle{plain}. Därför måste
+                                % denna rad vara med för att stänga av
+                                % sidnummer på första sida om man
+                                % använder \maketitle
+
+\newpage                        % Sidbrytning
+
+\section{Vision}
+\subsection{Introduction}
+When the book shelf at home grows full of books, it could get difficult to keep track of all literature contained within, even if they are organised and sorted. The book library is used to store information about books in an easy to read manner digitally on a computer. The information can then be retrieved from any device connected to the internet and equipped with a web browser. 
+
+Using the book library, books can be added and removed from the library, and it is possible to change or add information about books already in the library.
+\subsection{Requirements}
+\begin{enumerate}
+\item The books shall be presented to the user with book title and author.
+\item It shall be possible to add and remove books from the library.
+\item It shall be possible to edit information on an existing book.
+\item The following information should be available for each book:
+\begin{enumerate}
+\item Title
+\item Author
+\item Genre
+\item Price
+\item Date of publish
+\item A description of the book
+\end{enumerate}
+\item To make it easier to find a book in the list, it should be possible to search or filter the book list.
+\end{enumerate}
+
+
+
+
+\end{document}                 % The input file ends with this command.
