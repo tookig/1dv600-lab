@@ -5,7 +5,7 @@ const defaultProperties = {
   title: 'unknown title',
   author: 'unknown author',
   genre: 'unknown genre',
-  published: undefined,
+  publishDate: undefined,
   price: undefined,
   description: 'no description'
 }
